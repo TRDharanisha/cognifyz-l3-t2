@@ -1,0 +1,150 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/background.jpg') center/cover;
+    color: #fff;
+    padding: 180px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    padding: 12px 30px;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 0;
+}
+
+/* Cards */
+.highlight-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills {
+    list-style: none;
+}
+
+.skills li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* Contact Section */
+.bg-dark {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .highlight-cards {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+} */
